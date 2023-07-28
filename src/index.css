@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,5 +7,25 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* font-family: 'Manrope', sans-serif; */
+	font-family: 'Quicksand', sans-serif;
 }
+
+.nav-links__container {
+	@apply font-semibold tracking-tight flex items-start flex-col gap-2 text-sm;
+}
+
+.nav-links__heading {
+	@apply text-gray-700;
+}
+
+.nav-link__container {
+	@apply text-white flex gap-1 p-2 rounded-xl hover:text-red-700 hover:bg-zinc-800 transition-all;
+}
+
+.nav-link {
+	@apply flex gap-2;
+}
+
+/* .nav-link__icon {
+	@apply hover:text-red-700;
+} */

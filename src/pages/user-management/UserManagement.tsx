@@ -1,5 +1,5 @@
 const UserManagement = () => {
-	return <div>user management</div>
+	return <div>user Management</div>
 }
 
 export default UserManagement
