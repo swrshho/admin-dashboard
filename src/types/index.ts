@@ -17,3 +17,7 @@ export interface NavLinkGroup {
 	groupName: string
 	links: NavLink[]
 }
+
+export interface HamburgerBtnProps {
+	onClick: () => void
+}
