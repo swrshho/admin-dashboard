@@ -21,3 +21,7 @@ export interface NavLinkGroup {
 export interface HamburgerBtnProps {
 	onClick: () => void
 }
+
+export interface ButtonProps {
+	children: JSX.Element
+}

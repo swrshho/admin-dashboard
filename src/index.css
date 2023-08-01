@@ -15,7 +15,7 @@
 }
 
 .nav-links__heading {
-	@apply text-gray-700;
+	@apply text-zinc-600;
 }
 
 .nav-link__container {
@@ -26,6 +26,14 @@
 	@apply flex gap-2;
 }
 
-/* .nav-link__icon {
-	@apply hover:text-red-700;
-} */
+.users-stat__container {
+	@apply flex gap-2 justify-center items-center;
+}
+
+.users-stat__title {
+	@apply text-zinc-600 text-sm font-medium;
+}
+
+.users-stat__number {
+	@apply text-white font-semibold;
+}

@@ -7,7 +7,7 @@ const Layout = ({ children }: LayoutProps) => {
 			<div className='w-1/5'>
 				<NavBar />
 			</div>
-			<div className=''>{children}</div>
+			<div className='w-full'>{children}</div>
 		</div>
 	)
 }
