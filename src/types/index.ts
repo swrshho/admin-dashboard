@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from 'react'
+
 export interface UserRoute {
 	path: string
 	element: JSX.Element
@@ -24,4 +26,18 @@ export interface HamburgerBtnProps {
 
 export interface ButtonProps {
 	children: JSX.Element
+}
+
+export interface SelectorItemProps {
+	name: string
+	id: number
+}
+
+export interface SelectorProps {
+	state: SelectorItemProps
+	setState: Dispatch<SetStateAction<SelectorItemProps>>
+	stateItems: SelectorItemProps[]
+	icon?: JSX.Element
+	title?: string
+	color?: 'primary' | 'secondry'
 }
