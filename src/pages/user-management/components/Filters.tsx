@@ -30,7 +30,7 @@ const Filters = () => {
 	const [sort, setSort] = useState(sortOptions[0])
 
 	return (
-		<div className='text-white flex justify-between items-center w-fit gap-5'>
+		<div className='text-white flex flex-wrap justify-center sm:justify-between items-center w-fit gap-5'>
 			<Selector
 				state={display}
 				setState={setDisplay}
