@@ -5,7 +5,7 @@ import Layout from 'components/layout/Layout'
 
 function App() {
 	return (
-		<div className='w-full h-screen font-quicksand bg-zinc-900'>
+		<div className='w-full min-h-screen font-quicksand bg-zinc-900'>
 			<Layout>
 				<Routes>
 					<Route path='/' element={<Navigate to={'/users'} replace />} />

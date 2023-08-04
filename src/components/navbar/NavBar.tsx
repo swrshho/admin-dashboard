@@ -1,5 +1,5 @@
 import { navbarData } from './navbarData'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { NavLink } from 'react-router-dom'
 import HamburgerBtn from 'components/hamburger-btn/HamburgerBtn'
@@ -9,8 +9,14 @@ const NavBar = () => {
 	const clickHandler = () => {
 		setSidebarIsOpen(!sidebarIsOpen)
 	}
+
+	useEffect(() => {
+		sidebarIsOpen
+			? (document.body.style.overflow = 'hidden')
+			: (document.body.style.overflow = 'unset')
+	}, [sidebarIsOpen])
 	return (
-		<div className={`relative`}>
+		<div className={`relative md:fixed z-10`}>
 			<div className='absolute left-6 top-7 md:hidden z-10'>
 				<HamburgerBtn onClick={clickHandler} />
 			</div>
