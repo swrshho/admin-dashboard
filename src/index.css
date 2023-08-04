@@ -37,3 +37,7 @@
 .users-stat__number {
 	@apply text-white font-semibold;
 }
+
+.container-dark-bordered {
+	@apply bg-neutral-950 border border-solid border-neutral-800 rounded-xl;
+}

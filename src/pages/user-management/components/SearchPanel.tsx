@@ -5,7 +5,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 
 const SearchPanel = () => {
 	return (
-		<div className='border flex gap-1 justify-between max-w-3xl items-center bg-neutral-900 border-solid border-neutral-800 rounded-xl p-2'>
+		<div className='flex gap-1 justify-between max-w-3xl items-center p-2 container-dark-bordered'>
 			<SearchTermSelector />
 			<SearchBar />
 			<Button>
