@@ -4,7 +4,6 @@ import {
 	flexRender,
 	getCoreRowModel,
 	useReactTable,
-	PaginationState,
 	getPaginationRowModel,
 } from '@tanstack/react-table'
 import { usersData } from './tableData'
