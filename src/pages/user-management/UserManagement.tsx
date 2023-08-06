@@ -5,7 +5,7 @@ import Table from './components/Table'
 
 const UserManagement = () => {
 	return (
-		<div className='p-6 flex flex-col gap-3 mt-12'>
+		<div className='p-6 flex flex-col gap-3 mt-12 md:mt-0'>
 			<h1 className='text-white font-black text-lg'>Users Management</h1>
 			<UserStats />
 			<SearchPanel />

@@ -16,12 +16,12 @@ const NavBar = () => {
 			: (document.body.style.overflow = 'unset')
 	}, [sidebarIsOpen])
 	return (
-		<div className={`md:fixed`}>
-			<div className='fixed left-6 top-7 md:hidden z-10'>
+		<div className='sticky top-0 bottom-0 z-10'>
+			<div className='fixed left-6 top-7 md:hidden z-20'>
 				<HamburgerBtn onClick={clickHandler} />
 			</div>
 			<div
-				className={`h-screen z-10 border-solid border-r bg-zinc-900 border-r-neutral-800 flex justify-center items-center fixed md:static transition-all ${
+				className={`h-screen z-10 border-solid border-r bg-zinc-900 border-r-neutral-800 flex justify-center items-center fixed top-0 bottom-0 md:static transition-all ${
 					sidebarIsOpen ? 'left-0' : '-left-60'
 				}`}>
 				<div className='px-2'>

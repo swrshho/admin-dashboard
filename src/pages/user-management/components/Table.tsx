@@ -59,7 +59,7 @@ const Table = () => {
 	})
 	return (
 		<div className='table__container px-2 container-dark-bordered overflow-x-scroll'>
-			<table className='w-full border-separate border-spacing-4 min-w-min '>
+			<table className='w-full border-separate border-spacing-4'>
 				<thead className='table__header text-zinc-700 text-left '>
 					{table.getHeaderGroups().map((headerGroup) => (
 						<tr key={headerGroup.id}>
